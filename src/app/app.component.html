@@ -1,7 +1,7 @@
 <h1>Parent Component</h1>
 <div>
-    <button (click)="callChildComp()">Call Child Service</button>
-    <select name="selectService" id="selectService" [(ngModel)]="selectedService">
+    <button class="action-button" (click)="callChildComp()">Call Child Service</button>
+    <select class="action-button" name="selectService" id="selectService" [(ngModel)]="selectedService">
         @for(item of serviceList; track item.id){
             <option [ngValue]="item.serviceName">{{item.serviceName}}</option>
         }
